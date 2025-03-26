@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="container">
+        <h1>🛍 Product Recommendation System</h1>
+
+        <!-- Product Selection -->
+        <label for="product">Select a Product:</label>
+        <select id="product" onchange="loadRecommendations()">
+            <option value="">-- Choose a Product --</option>
+            <option value="Premia Tea Masala">Premia Tea Masala</option>
+            <option value="Laptop">Laptop</option>
+        </select>
+
+        <!-- Recommended Products -->
+        <h2>📌 Recommended Products</h2>
+        <div id="recommendation-list" class="recommend-list"></div>
+
+        <!-- Floating Cart Icon -->
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-container" id="cart">
+            <h2>🛍️ Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <h3>💰 Total Price: <span id="total-price">₹0</span></h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Hoverable Trending Chart Section -->
+    <div class="chart-container">
+        <div class="hover-area">🔥 Hover here to see Top Trending Products</div>
+        <div class="bar-chart">
+            <canvas id="trendingChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

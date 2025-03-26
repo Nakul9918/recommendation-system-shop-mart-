@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Select Box */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Recommended Products */
+.recommend-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.product-item {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.product-item button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.product-item button:hover {
+    background: #e65c00;
+}
+
+/* Floating Cart Icon */
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6600;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Cart Sidebar */
+.cart-container {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-container.show {
+    right: 0;
+}
+
+.checkout-btn {
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Trending Bar Chart Section */
+.chart-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Hide the chart initially */
+.bar-chart {
+    display: none;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the chart when hovering */
+.chart-container:hover .bar-chart {
+    display: block;
+}
+
+/* Hover Area */
+.hover-area {
+    background: #f8b400;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
